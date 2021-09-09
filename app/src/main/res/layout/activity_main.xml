@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="알림 예제"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="알림 설정시간"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <RadioButton
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1분 후" />
+
+                <RadioButton
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2분 후" />
+
+                <RadioButton
+                    android:id="@+id/five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5분 후" />
+
+                <RadioButton
+                    android:id="@+id/ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10분 후" />
+
+                <RadioButton
+                    android:id="@+id/hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1시간 후" />
+
+                <RadioButton
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="하루 뒤" />
+            </RadioGroup>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="알림 설정"/>
+</LinearLayout>
